@@ -1,0 +1,5 @@
+name: Assignment
+description: A module for the Assignment.
+core_version_requirement: ^8.8.0 || ^9
+package: SpBee
+type: module

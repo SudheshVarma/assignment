@@ -1,0 +1,8 @@
+sp_assignment.time_form_configuration:
+  path: '/admin/config/timeConfig'
+  defaults:
+    _form: '\Drupal\sp_assignment\Form\timeConfigForm'
+    _title: 'Config to set Time'
+  requirements:
+    _permission: 'access content'
+    _role: 'authenticated'

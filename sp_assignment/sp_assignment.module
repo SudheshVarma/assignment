@@ -1,0 +1,41 @@
+<?php
+
+/**
+ * @file
+ * The sp_assignment module routines.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\node\Entity\Node;
+use Drupal\node\NodeInterface;
+use Drupal\user\Entity\User;
+use Drupal\views\Plugin\views\query\QueryPluginBase;
+use Drupal\views\ViewExecutable;
+
+
+
+function timezone_selection() {
+	return [
+		'America/Chicago',
+		'America/New_York',
+		'Asia/Tokyo',
+		'Asia/Dubai',
+		'Asia/Kolkata',
+		'Europe/Amsterdam',
+		'Europe/Oslo',
+		'Europe/London'
+	];
+
+}
+
+/**
+ * Implements hook_theme().
+ */
+function sp_assignment_theme() {
+	return array(
+	 'time_block' => array(
+			  'variables' => array('items' => []),
+			  'template' => 'time-block',
+		  ),
+	);
+  }
